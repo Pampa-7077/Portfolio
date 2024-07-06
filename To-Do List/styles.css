@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn.pixabay.com/photo/2018/08/18/14/31/september-3614870_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(140, 58, 140, 0.919);
+    border:2px solid rgb(79, 76, 76);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(40, 34, 34, 0);
+    width: 300px;
+}
+
+h1, h2 {
+    text-align: center;
+    color:white;
+}
+
+.input-container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+::placeholder{
+    color: rgb(212, 191, 191);
+}
+
+input[type="text"] {
+    background-color: transparent;
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #f2eded;
+    border-radius: 5px;
+    color: white;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: linear-gradient(rgb(247, 58, 200), rgb(52, 52, 247));
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: linear-gradient(rgb(231, 20, 178), rgb(28, 28, 241));
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.task-action {
+    margin-left: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #484747fd;
+}
